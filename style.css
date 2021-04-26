@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 12vh;
+  background-color: #333;
+  display: flex;
+}
+
+.ticket-container {
+  height: 88vh;
+  /* background-color: #f2f2f2; */
+  background-color: #e0e0eb;
+  padding: 3rem; 
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filter-container,
+.add-delete-container {
+  height: 8vh;
+  margin-top: 2vh;
+  margin-left: 8vw;
+  border-radius: 3px;
+  background-color: #444;
+  box-shadow: 0px 0px 1px 0px rgb(77, 77, 77);
+}
+
+.app-name{
+  margin-top: 15px;
+  margin-left: 15vw;
+  /* color: #e0e0eb; */
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 40px;
+  background: linear-gradient(to right, #d9534f, #4f96d4, #5cb85c, #f0ad4e);
+	-webkit-background-clip: text;
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.filter-container {
+  width: 18vw;
+  display: flex;
+}
+
+.add-delete-container {
+  width: 9vw;
+  margin-left: 21vw;
+  display: flex;
+}
+
+.filter {
+  height: 100%;
+  width: 25%;
+}
+
+.red-color-btn,
+.blue-color-btn,
+.green-color-btn,
+.yellow-color-btn {
+  display: block;
+  width: 40%;
+  height: 40%;
+  border-radius: 3px;
+  margin-top: calc(8vh * 0.3);
+  margin-bottom: calc(8vh * 0.3);
+  margin-left: calc(4.5vw * 0.3);
+  margin-right: calc(4.5vw * 0.3);
+}
+
+.red-color-btn,
+.modal-red-filter,
+.green-color-btn,
+.modal-green-filter,
+.yellow-color-btn,
+.modal-yellow-filter,
+.blue-color-btn,
+.modal-blue-filter {
+  box-shadow: 2px 2px 2px 2px rgb(54, 54, 54);
+}
+
+.red-color-btn,
+.modal-red-filter,
+.ticket-color-red {
+  background-color: #d9534f;
+}
+
+.green-color-btn,
+.modal-green-filter,
+.ticket-color-green {
+  background-color: #5cb85c;
+}
+
+.yellow-color-btn,
+.modal-yellow-filter,
+.ticket-color-yellow {
+  background-color: #f0ad4e;
+}
+
+.blue-color-btn,
+.modal-blue-filter,
+.ticket-color-blue {
+  background-color: #337ab7;
+}
+
+.add,
+.delete {
+  height: 100%;
+  width: 50%;
+}
+
+.action-btn {
+  display: block;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+  margin-top: calc(8vh * 0.3);
+  margin-bottom: calc(8vh * 0.3);
+  margin-left: calc(4.5vw * 0.3);
+  margin-right: calc(4.5vw * 0.3);
+  background-color: white;
+  padding-left: 3%;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgb(54, 54, 54);
+}
+
+.filter:hover,
+.add:hover,
+.delete:hover {
+  background-color: rgb(36, 35, 35);
+  cursor: pointer;
+  box-shadow: 0px 0px 1px;
+}
+
+.modal {
+  box-shadow: 10px 10px 10px grey; /* x-axis(can be negative also) y-axis blur radius(spread shadow) */
+  height: 18rem;
+  width: 35rem;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  left: calc((100vw - 35rem) / 2);
+  border-radius: 3px;
+}
+
+.task-to-be-added {
+  width: 70%;
+  height: 100%;
+  padding: 3rem;
+  outline: none;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+.modal-priority-list {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #444;
+  border-radius: 3px;
+}
+
+.modal-filter {
+  width: 100%;
+  height: 20%;
+  border-radius: 3px;
+}
+
+.modal-filter:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-filter.active {
+  border: 4px ridge grey;
+}
+
+.ticket {
+  height: 9rem;
+  width: 16rem;
+  background-color: white;
+  box-shadow: 5px 5px 5px grey; 
+}
+
+.ticket-color {
+  height: 6%;
+  width: 100%;
+}
+
+.ticket-id {
+  height: 15%;
+  width: 100%;
+  padding: 3%;
+  color: grey;
+}
+
+.task {
+  height: 79%;
+  width: 100%;
+  padding: 3%;
+}
