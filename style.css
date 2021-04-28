@@ -141,6 +141,11 @@ body {
   box-shadow: 0px 0px 1px;
 }
 
+.filter.active{
+  background-color: rgb(36, 35, 35);
+  border: 2px solid grey;
+}
+
 .modal {
   box-shadow: 10px 10px 10px grey; /* x-axis(can be negative also) y-axis blur radius(spread shadow) */
   height: 18rem;
