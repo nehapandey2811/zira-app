@@ -15,7 +15,7 @@ function loadTTickets(color) {
             let ticket = document.createElement("div");
             ticket.classList.add("ticket");
             ticket.innerHTML = `<div class="ticket-color ticket-color-${allTasks[i].priority}"></div>
-                            <div class="ticket-id">#${allTasks[i].ticketId}</div>
+                            <div class="ticket-id">Ticket ID: ${allTasks[i].ticketId}</div>
                             <div class="task">${allTasks[i].task}</div>`;
             TC.appendChild(ticket);
             ticket.addEventListener("click", function (e) {
